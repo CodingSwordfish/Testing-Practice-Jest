@@ -50,15 +50,19 @@ module.exports = {
   const average = sum / arr.length;
 
   const min =Math.min(...arr);
-  return { average,min };
+
+   const max =Math.max(...arr);
+
+    const length = arr.length;
+
+  return { average,min,max,length };
 
       
 
 
 
       
-      // max: (arr)=>Math.max(...arr),
-      // length: (arr)=>arr.length
+     
     }
   }
   
