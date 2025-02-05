@@ -41,3 +41,7 @@ test("divide 6 / 3 to equal 2", () => {
     expect(compMod.caesarCipher('aBcDeF', 1)).toBe('bCdEfG'); 
     expect(compMod.caesarCipher('!@#$%^&*()', 1)).toBe('!@#$%^&*()'); 
   });
+
+  test("average,min",()=>{
+    expect(compMod.analyzeArray([1,2,3])).toEqual({"average": 2,"min" : 1})
+  })

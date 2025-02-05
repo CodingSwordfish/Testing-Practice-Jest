@@ -42,7 +42,25 @@ module.exports = {
         }
       })
       .join('');
+  },
+
+  analyzeArray: (arr)=>{
+    
+  let sum = arr.reduce((acc, curr) => acc + curr, 0);
+  const average = sum / arr.length;
+
+  const min =Math.min(...arr);
+  return { average,min };
+
+      
+
+
+
+      
+      // max: (arr)=>Math.max(...arr),
+      // length: (arr)=>arr.length
+    }
   }
   
   
-}
+
